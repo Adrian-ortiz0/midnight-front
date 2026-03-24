@@ -1,1 +1,10 @@
-/* You can add global styles to this file, and also import other style files */
+@import "tailwindcss";
+@plugin "daisyui" {
+  themes: halloween --default;
+}
+
+html, body {
+  background-color: #020202 !important;
+  min-height: 100%;
+  margin: 0;
+}

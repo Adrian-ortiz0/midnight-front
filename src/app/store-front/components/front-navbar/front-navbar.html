@@ -1,0 +1,83 @@
+<div class="navbar shadow-sm z-50"
+  style="
+    background: linear-gradient(to bottom, rgba(12, 0, 0, 0.85) 0%, rgba(2, 0, 0, 0.6) 100%);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+  "
+>
+
+  <div class="navbar-start">
+    <button
+      routerLink="/auth/login"
+      class="btn btn-ghost btn-circle"
+    >
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        class="w-6 h-6"
+        viewBox="0 0 24 24"
+      >
+        <g fill="none" stroke="currentColor" stroke-width="1.5">
+          <circle cx="12" cy="6" r="4" />
+          <path
+            stroke-linecap="round"
+            d="M19.998 18q.002-.246.002-.5c0-2.485-3.582-4.5-8-4.5s-8 2.015-8 4.5S4 22 12 22c2.231 0 3.84-.157 5-.437"
+          />
+        </g>
+      </svg>
+    </button>
+  </div>
+
+  <div class="navbar-center">
+    <a
+      routerLink="/"
+      class="btn btn-ghost
+             font-['Libre_Baskerville']
+             text-[1.7rem]
+             bg-[linear-gradient(135deg,#bd1313,#ba1010)]
+             bg-clip-text
+             text-transparent
+             drop-shadow-[0_0_20px_rgba(119,12,12,0.79)]
+             [text-shadow:0_0_10px_rgba(124,18,18,0.2)]"
+    >
+      Midnight
+    </a>
+  </div>
+
+  <div class="navbar-end">
+    <div class="dropdown dropdown-end">
+      <div tabindex="0" role="button" class="btn btn-ghost btn-circle">
+        <div class="indicator">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            class="h-5 w-5"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z"
+            />
+          </svg>
+          <span class="badge badge-sm indicator-item">8</span>
+        </div>
+      </div>
+
+      <div
+        tabindex="0"
+        class="card card-compact dropdown-content bg-[#000000]/70 z-10 mt-3 w-52 shadow"
+      >
+        <div class="card-body bg-transparent">
+          <span class="text-lg font-bold">8 Items</span>
+          <span class="text-red-700/80">Subtotal: $999</span>
+          <div class="card-actions">
+            <button class="btn bg-[#960202] btn-block color-white" routerLink="/cart">Ver carrito</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div>
